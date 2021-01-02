@@ -39,7 +39,7 @@ public class Data {
 				+ accountNumber 
 				+ ", Holder: " 
 				+ name 
-				+ ", Balance "
+				+ ", Balance: $ "
 				+ String.format("%.2f", bankBalance);
 	}
 }

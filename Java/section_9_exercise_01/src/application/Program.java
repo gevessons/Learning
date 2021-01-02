@@ -22,7 +22,7 @@ public class Program {
 		char initialDeposit = sc.next().charAt(0);
 		double valueDeposit = 0.0;
 		if(initialDeposit != 'n') {
-			System.out.print("Enten initial deposit value: ");
+			System.out.print("Enter initial deposit value: ");
 			valueDeposit = sc.nextDouble();
 			System.out.println("");
 		}
