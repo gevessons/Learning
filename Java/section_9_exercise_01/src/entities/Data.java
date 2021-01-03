@@ -1,19 +1,21 @@
-package util;
+package entities;
 
 public class Data {
 	private int accountNumber;
 	private String name;
 	private double bankBalance;
 	
-	public Data() {
-	}
-	
-	public Data(int accountNumber, String name, double valueDeposit) {
+	public Data(int accountNumber, String name, double initialDeposit) {
 		this.accountNumber = accountNumber;
 		this.name = name;
-		this.bankBalance = valueDeposit;
+		deposit(initialDeposit);
 	}
 	
+	public Data(int accountNumber, String name) {
+		this.accountNumber = accountNumber;
+		this.name = name;
+	}
+
 	public int getAccountNumber() {
 		return accountNumber;
 	}
@@ -27,11 +29,11 @@ public class Data {
 	}
 	
 	public void deposit(double valueDeposit) { 
-		 this.bankBalance += valueDeposit;
+		 bankBalance += valueDeposit;
 	}
 	
 	public void withdraw (double valueWithdraw) {
-		this.bankBalance -= valueWithdraw + 5.0;
+		bankBalance -= valueWithdraw + 5.0;
 	}
 	
 	public String toString() {
