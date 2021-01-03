@@ -24,10 +24,10 @@ public class Program {
 		if(initialDeposit != 'n') {
 			System.out.print("Enter initial deposit value: ");
 			valueDeposit = sc.nextDouble();
-			System.out.println("");
 		}
 		Data data = new Data(accountNumber, name, valueDeposit);
 		
+		System.out.println("");
 		System.out.println("Account data: ");
 		System.out.println(data);
 		
