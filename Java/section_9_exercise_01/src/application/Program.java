@@ -12,6 +12,7 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
+		Data data;
 		System.out.print("Enter account number: ");
 		int accountNumber = sc.nextInt();
 		sc.nextLine();
@@ -24,8 +25,12 @@ public class Program {
 		if(initialDeposit == 'y') {
 			System.out.print("Enter initial deposit value: ");
 			valueDeposit = sc.nextDouble();
+			data = new Data(accountNumber, name, valueDeposit);
 		}
-		Data data = new Data(accountNumber, name, valueDeposit);
+		else {
+			data = new Data(accountNumber, name);
+		}
+		
 		
 		System.out.println();
 		System.out.println("Account data: ");
