@@ -4,12 +4,10 @@ public class Product {
 	
 	private String name;
 	private String email;
-	private double room;
 	
-	public Product(String name, String email, double room) {
+	public Product(String name, String email) {
 		this.name = name;
 		this.email = email;
-		this.room = room;
 	}
 	
 	public String getName() {
@@ -27,9 +25,8 @@ public class Product {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	public double getRoom() {
-		return room;
-	}
 
+	public String toString() {
+		return name + ", " + email;
+	}
 }

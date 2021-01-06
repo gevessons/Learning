@@ -28,14 +28,14 @@ public class Program {
 			String email = sc.nextLine();
 			System.out.print("Room: ");
 			int room = sc.nextInt();
-			vect[room] = new Product(name, email, room);
+			vect[room] = new Product(name, email);
 		}
 		
 		System.out.println();
 		System.out.println("Busy rooms: ");
 		for (int i=0; i<rooms; i++) {
 			if (vect[i] != null) {
-				System.out.println(i + ": " + vect[i].getName() + ", " + vect[i].getEmail());
+				System.out.println(i + ": " + vect[i]);
 			}		
 		}
 		
